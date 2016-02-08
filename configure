@@ -2,7 +2,7 @@
 
 # Get the path of this script (works even if this script is sourced and not
 # executed, but won't work with symlink)
-SCRIPT_PATH=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd )
+SCRIPT_PATH=$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null && pwd )
 
 if [ "$1" != "" ]
 then
